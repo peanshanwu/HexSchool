@@ -1,0 +1,180 @@
+
+
+
+/* ________________ basic ________________ */
+    *, ::before, ::after {
+        box-sizing: border-box;
+    }
+    body {background-color: rgb(230, 230, 230);}
+    a {text-decoration: none;}
+
+    .wrap {
+        width: 1900px;
+        background-color: #fff;
+        margin: 0 auto;
+        padding-top: 48px;
+    }
+/* ................ basic ................ */
+
+/* ________________ style ________________ */
+
+/* width , height */
+    .w-1200 {width: 1200px;}
+
+/* padding , margin */
+    .nameToBorder__mb {margin-bottom: 24px;}
+    .borderToImg__pt {padding-top: 48px;}
+    .titleToBorder__mb {margin-bottom: 8px;}
+    .borderToP__pt-1 {padding-top: 16px;} /* border to paragraph */
+    .borderToP__pt-2 {padding-top: 32px;} /* pt-n * 16 (16的倍數) */
+    .pIndent__pl {padding-left: 50px;}  /* paragraph的縮排 */
+    
+    .mlr-auto {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mb-9 {margin-bottom: 72px;} /* mb-n * 8 (8的倍數) */
+    .mb-4 {margin-bottom: 32px;}
+    .mb-3 {margin-bottom: 24px}
+    .mb-2 {margin-bottom: 16px;}
+    .mb-1 {margin-bottom: 8px;}
+
+/* font */
+    .ta-c {text-align: center;}
+    .fw-b {font-weight: bold;}
+    .color-b {color: #000;}
+    .color-w {color: #fff;}
+    .font-name {
+        font: 80px/90px "Andale Mono",sans-serif;
+    }
+    .font-title {
+        padding-right: 12px;
+        font: 32px/45px "PingFang TC",sans-serif;
+    }
+    .font-enTitle {
+        font: 24px "Roboto",sans-serif;
+    }
+    .font-skiList {
+        font: 300 24px/32px "Roboto",sans-serif;
+    }
+    .font-p {
+        font: 300 24px/36px "PingFang TC",sans-serif;
+    }
+    .font-p_bold {
+        font:700 24px/36px "PingFang TC",sans-serif;
+    }
+    .font-p_small{
+        font: 300 20px/30px "PingFang TC",sans-serif;
+    }   
+
+/* border */
+    .bdb-w {border-bottom: 1px solid #fff;}
+    .bdt-w {border-top: 1px solid #fff;}
+    .bdt-b {border-top: 1px solid #000;}
+
+/* color */
+    .color-enTiltle {color:#A00404;}
+    .bgc-lightBlue {background-color: #96A9C4;}
+    .bgc-darkBlue {background-color: #415165;}
+
+/* line , point */
+    .line-point {position: relative;}
+    .line-point:after {
+        content: "";    /* 不要有內容 */
+        position: absolute;
+        top: 10px;
+        left: -25px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        transform: translateX(-50%);
+        background-color: #96A9C4;
+        z-index: 1;     /*z軸方向，預設為0，往上升最大到5*/
+    }
+    .line-section {position: relative;}
+    .line-section:after { 
+        position: absolute;
+        content: "";
+        top: 26px;
+        bottom: 10px;
+        left: 25px;
+        background-color: #96A9C4;
+        width: 1px;
+        transform: translateX(-50%);
+    }
+/* ................ style ................ */
+
+/* ________________ flex ________________ */
+    .d-flex {display: flex;}
+    .jc-c {justify-content: center;}
+    .ai-c {align-items: center;}
+/* ................ flex ................ */
+
+/* ________________ position ________________ */
+    .pos-a {position: absolute;}
+    .pos-r {position: relative;}
+    .pos-top {top: -56px;}
+    .pos-left {left: 18%;}
+/* ................ position ................ */
+
+
+
+
+
+           /* block: intro */
+
+/* _________________ intro _________________ */
+    .intro {margin-bottom: 142px;}
+/* ................. intro ................. */
+
+/* _________________ profile _________________ */
+    .pro-pic {margin-bottom: 45px;}
+/* ................. profile ................. */
+
+
+
+
+
+               /* block: skill */
+
+/* _________________ skill _________________ */
+    .ski-bg {
+        height: 360px;
+        margin-bottom: 136px;
+    }
+    .ski {
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
+    .ski-title {
+        width: 995px;
+        padding-bottom: 7px;
+        margin-bottom: 41px;
+    }
+    .ski-list {
+        width: 220px;
+        padding-left: 24px;
+        border-left: 1px solid #96A9C4;
+    }
+/* ................. skill ................. */
+
+
+
+
+
+               /* block: footer */
+
+/* _________________ footer _________________ */
+    .contact {
+        padding-top: 24px;
+        padding-bottom: 48px;
+    }
+    .con-media li {
+        margin: 0px 12px;
+    }
+/* ................. footer ................. */
+
+
+
+
+
