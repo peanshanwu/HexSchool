@@ -1,0 +1,149 @@
+.contact {
+    padding: 64px 0px 92px;
+    background-color: $pink;
+}
+.contact-container {
+    max-width: $desktop-container__width;
+    margin: 0 auto;
+    @include pad() {
+        max-width: $pad-container__width;
+    } 
+    @include iphone() {
+        max-width: $iphone-container__width;
+    }
+    >p {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+        @include pad() {
+            margin-bottom: 16px;
+        }
+        @include iphone() {
+            margin-bottom: 8px;
+        }
+    }
+}
+.contact-title {
+    @include desktop-titleFont;
+    color: #000;
+    margin-bottom: 1.5rem;
+}
+.contact-input__group {
+    margin-bottom: 16px;
+    input {
+        background-color: transparent;
+        border: 1px solid #000;
+        font-size: 16px;
+        padding: 14px 16px;
+        width: 100%;
+        height: 50px;
+        @include iphone() {
+            height: 36px;
+            padding: 7px 12px;
+        }
+    }
+    textarea {
+        background-color: transparent;
+        border: 1px solid #000;
+        font-size: 16px;
+        padding: 14px 16px;
+        width: 100%;
+        height: 136px;
+        @include iphone() {
+            height: 100px;
+            padding: 7px 12px;
+        }
+    }
+}
+
+// agree-checkbox
+
+/* The container */
+.contact-agree__container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 42px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    @include pad() {
+        margin-bottom: 24px;
+    }
+    @include iphone() {
+        margin-bottom: 12px;
+    }
+  }
+  
+  /* Hide the browser's default checkbox */
+  .contact-agree__container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .agree-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: transparent;
+    border: 1px solid #000;
+  }
+  
+  /* On mouse-over, add a gray background color */
+  .contact-agree__container:hover input ~ .agree-checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a background */
+  .contact-agree__container input:checked ~ .agree-checkmark {
+    background-color: #fff;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .agree-checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .contact-agree__container input:checked ~ .agree-checkmark::after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .contact-agree__container .agree-checkmark::after {
+    left: 6px;
+    top: 0px;
+    width: 9px;
+    height: 14px;
+    border: solid $red;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .contact-submit {
+      cursor: pointer;
+      width: 180px;
+      height: 54px;
+      padding: 16px 58px;
+      background-color: $red;
+      color: $white;
+      border-color: transparent;
+      &:hover {
+          background-color: darken($red,10%);
+      }
+      @include pad() {
+          width: 136px;
+          height: 36px;
+          padding: 7px 36px;
+      }
+  }

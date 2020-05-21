@@ -1,0 +1,17 @@
+/* _____________________ typography _____________________ */
+html, body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    @include pad() {
+      font-size: 11px;
+    }
+    @include iphone(){
+      font-size: 9px;
+    }
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: bold;
+}
